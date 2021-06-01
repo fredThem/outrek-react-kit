@@ -2,7 +2,7 @@ import merge from 'lodash/merge';
 import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { THEMES } from '../constants';
 import { lightShadows, darkShadows } from './shadows';
-import bg-topographic from 'src/images/brand/bg-topographic.svg'
+// import bgTopographic from '../images/brand/bgTopographic.svg';
 
 const baseOptions = {
   direction: 'ltr',
@@ -70,7 +70,9 @@ const baseOptions = {
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundImage: `url(${bg-topographic})`,
+          backgroundImage: 'none',
+          // backgroundImage: `url(${bgTopographic})`,
+          // backgroundSize: 'cover',
         },
       },
     },
