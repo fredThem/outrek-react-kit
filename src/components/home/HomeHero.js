@@ -23,7 +23,7 @@ const HomeHero = (props) => {
     <Box
       sx={{
         backgroundColor: 'background.paper',
-        pt: 6
+        pt: 6,
       }}
       {...props}
     >
@@ -34,8 +34,8 @@ const HomeHero = (props) => {
           display: 'flex',
           flexDirection: 'column',
           px: {
-            md: '130px !important'
-          }
+            md: '130px !important',
+          },
         }}
       >
         <Typography
@@ -49,7 +49,7 @@ const HomeHero = (props) => {
           color="textPrimary"
           variant="h3"
         >
-          Material Kit Pro v4
+          Overplan and go with the flow
         </Typography>
         <Typography
           align="center"
@@ -57,10 +57,7 @@ const HomeHero = (props) => {
           variant="body1"
           sx={{ py: 3 }}
         >
-          A professional kit that comes with ready-to-use Material-UI©
-          components
-          developed with one common goal in mind, help
-          you build faster &amp; beautiful applications.
+          Organize your next trip outdoors with Outrek&apos;s collaborative packing list
         </Typography>
         <Button
           color="primary"
@@ -69,46 +66,46 @@ const HomeHero = (props) => {
           to="/browse"
           variant="contained"
         >
-          Browse Components
+          Plan a trip
         </Button>
         <Box
           sx={{
             alignItems: {
               sm: 'center',
-              xs: 'flex-start'
+              xs: 'flex-start',
             },
             display: 'flex',
             flexDirection: {
               sm: 'row',
-              xs: 'column'
+              xs: 'column',
             },
             py: 3,
             '& > div': {
               p: {
                 sm: '0 10.5px',
-                xs: '10.5px 0'
-              }
-            }
+                xs: '10.5px 0',
+              },
+            },
           }}
         >
           <Typography
             color="textSecondary"
             variant="caption"
           >
-            Available For:
+            ASK the rightquestions:
           </Typography>
           {['JavaScript', 'TypeScript', 'Figma', 'Sketch'].map((item) => (
             <Box
               key={item}
               sx={{
                 alignItems: 'center',
-                display: 'flex'
+                display: 'flex',
               }}
             >
               <CheckCircleIcon
                 sx={{
                   color: 'success.light',
-                  mr: '10.5px'
+                  mr: '10.5px',
                 }}
               />
               <Typography
@@ -126,42 +123,40 @@ const HomeHero = (props) => {
         sx={{
           width: '100%',
           px: {
-            md: 15
-          }
+            md: 15,
+          },
         }}
       >
         <Box
           sx={{
             position: 'relative',
-            pt: !isLoading && '52.13%'
+            pt: !isLoading && '52.13%',
           }}
         >
-          {isLoading
-            ? (
-              <Skeleton
-                sx={{
-                  borderRadius: 1,
-                  width: '100%',
-                  pt: '52.13%'
-                }}
-                variant="rectangular"
-              />
-            )
-            : (
-              <img
-                alt="Hero"
-                src={image}
-                style={{
-                  maxWidth: '100%',
-                  zIndex: 20,
-                  position: 'absolute',
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  top: 0
-                }}
-              />
-            )}
+          {isLoading ? (
+            <Skeleton
+              sx={{
+                borderRadius: 1,
+                width: '100%',
+                pt: '52.13%',
+              }}
+              variant="rectangular"
+            />
+          ) : (
+            <img
+              alt="Hero"
+              src={image}
+              style={{
+                maxWidth: '100%',
+                zIndex: 20,
+                position: 'absolute',
+                bottom: 0,
+                left: 0,
+                right: 0,
+                top: 0,
+              }}
+            />
+          )}
           <img
             alt="Shapes 1"
             src="/static/home/shapes_1.svg"
@@ -171,7 +166,7 @@ const HomeHero = (props) => {
               top: '-7.5%',
               width: '20%',
               maxWidth: '243.32px',
-              zIndex: 0
+              zIndex: 0,
             }}
           />
           <img
@@ -183,7 +178,7 @@ const HomeHero = (props) => {
               right: '-8%',
               width: '20%',
               maxWidth: '195.32px',
-              zIndex: 30
+              zIndex: 30,
             }}
           />
         </Box>

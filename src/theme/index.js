@@ -2,6 +2,7 @@ import merge from 'lodash/merge';
 import { createTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { THEMES } from '../constants';
 import { lightShadows, darkShadows } from './shadows';
+import bg-topographic from 'src/images/brand/bg-topographic.svg'
 
 const baseOptions = {
   direction: 'ltr',
@@ -10,103 +11,104 @@ const baseOptions = {
       styleOverrides: {
         fallback: {
           height: '75%',
-          width: '75%'
-        }
-      }
+          width: '75%',
+        },
+      },
     },
     MuiButton: {
       styleOverrides: {
         root: {
-          textTransform: 'none'
-        }
-      }
+          textTransform: 'none',
+        },
+      },
     },
     MuiCssBaseline: {
       styleOverrides: {
         '*': {
-          boxSizing: 'border-box'
+          boxSizing: 'border-box',
         },
         html: {
           MozOsxFontSmoothing: 'grayscale',
           WebkitFontSmoothing: 'antialiased',
           height: '100%',
-          width: '100%'
+          width: '100%',
         },
         body: {
-          height: '100%'
+          height: '100%',
         },
         '#root': {
-          height: '100%'
+          height: '100%',
         },
         '#nprogress .bar': {
-          zIndex: '2000 !important'
-        }
-      }
+          zIndex: '2000 !important',
+        },
+      },
     },
     MuiCardHeader: {
       defaultProps: {
         titleTypographyProps: {
-          variant: 'h6'
-        }
-      }
+          variant: 'h6',
+        },
+      },
     },
     MuiLinearProgress: {
       styleOverrides: {
         root: {
           borderRadius: 3,
-          overflow: 'hidden'
-        }
-      }
+          overflow: 'hidden',
+        },
+      },
     },
     MuiListItemIcon: {
       styleOverrides: {
         root: {
           minWidth: 'auto',
-          marginRight: '16px'
-        }
-      }
+          marginRight: '16px',
+        },
+      },
     },
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundImage: 'none'
-        }
-      }
-    }
+          backgroundImage: `url(${bg-topographic})`,
+        },
+      },
+    },
   },
   typography: {
     button: {
-      fontWeight: 600
+      fontWeight: 600,
     },
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
+    fontFamily:
+      '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
     h1: {
       fontWeight: 600,
-      fontSize: '3.5rem'
+      fontSize: '3.5rem',
     },
     h2: {
       fontWeight: 600,
-      fontSize: '3rem'
+      fontSize: '3rem',
     },
     h3: {
       fontWeight: 600,
-      fontSize: '2.25rem'
+      fontSize: '2.25rem',
     },
     h4: {
       fontWeight: 600,
-      fontSize: '2rem'
+      fontSize: '2rem',
     },
     h5: {
       fontWeight: 600,
-      fontSize: '1.5rem'
+      fontSize: '1.5rem',
     },
     h6: {
       fontWeight: 600,
-      fontSize: '1.125rem'
+      fontSize: '1.125rem',
     },
     overline: {
-      fontWeight: 600
-    }
-  }
+      fontWeight: 600,
+    },
+  },
 };
 
 const themesOptions = {
