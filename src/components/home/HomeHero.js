@@ -3,6 +3,7 @@ import { Link as RouterLink } from 'react-router-dom';
 import { Box, Button, Container, Skeleton, Typography } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 import CheckCircleIcon from '../../icons/CheckCircle';
+import '../styling/backgroundImage.css';
 
 const HomeHero = (props) => {
   const theme = useTheme();
@@ -21,6 +22,7 @@ const HomeHero = (props) => {
 
   return (
     <Box
+      className="topographic-bg"
       sx={{
         backgroundColor: 'background.paper',
         pt: 6,

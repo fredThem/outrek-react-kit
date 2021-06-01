@@ -1,0 +1,7 @@
+.topographic-bg {
+  /* backgroundImage: 'none', */
+  /* // backgroundImage: `url(${bgTopographic})`,
+  // backgroundSize: 'cover', */
+  background-image: url('../../images/brand/bgTopographic.svg');
+  background-size: cover;
+}
